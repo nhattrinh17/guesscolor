@@ -1,0 +1,139 @@
+html{
+    font-size: 62.5%;
+    font-family: 400 130px/0.8 'Great Vibes', Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    box-sizing: inherit;
+}
+
+.app{
+    overflow: hidden;
+}
+
+.grid{
+    width: 600px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 -8px;
+}
+
+.l-2-4{
+    flex: 0 0 25%;
+    width: 25%;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.header{
+    height: 130px;
+    background-color: rgb(65, 206, 225);
+}
+
+.header__name--game,
+.header__heading{
+    font-size: 2.8rem;
+    font-weight: 500;
+    line-height: 2.8rem;
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+}
+
+.header__text--color{
+    font-size: 3.2rem;
+    font-weight: 500;
+    line-height:3.2rem;
+    margin: 10px 0;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.content__nav{
+    background-color: #fff;
+    height: 30px;
+}
+
+.content__nav--row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__opions,
+.nav__newgame{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    line-height: 3rem;
+    color: rgb(65, 206, 225);
+}
+
+.nav__opions{
+    display: flex;
+}
+
+.nav__newgame--text,
+.nav__option--hard,
+.nav__option--easy{
+    margin: 0 4px;
+    padding: 0 6px;
+}
+
+.nav__option--easy:hover,
+.nav__option--hard:hover,
+.nav__newgame--text:hover{
+    background-color: rgb(65, 206,225);
+    color: #fff;
+    cursor: pointer;
+}
+
+.content__color{
+    height: calc(100vh - 130px );
+    background-color: rgba(0, 0, 0, 0.596);
+}
+
+.nav__option--easy.active{
+    background-color: rgb(65, 206,225);
+    color: #fff;
+}
+
+.nav__option--hard.active{
+    background-color: rgb(65, 206,225);
+    color: #fff;
+}
+
+.color__hard.active,
+.color__easy.active{
+    display: flex;
+}
+
+.color__easy,
+.color__hard{
+    display:none;
+}   
+
+.color__hard--item,
+.color__easy--item{
+    display: block;
+    margin: 20px;
+    height: 154px;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+@media (max-width:740px){
+    .color__hard--item,
+    .color__easy--item{
+        height: 100px;
+        margin: 8px;
+    }
+}
